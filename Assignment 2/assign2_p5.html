@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Destinations - Dream Vacation</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @media (max-width: 640px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+    .grid-auto-fit {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+  </style>
+</head>
+<body class="bg-white min-h-screen flex flex-col justify-between text-gray-800">
+  <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl sm:text-2xl font-bold">Dream Vacation</h1>
+    <nav>
+      <ul class="flex space-x-2 sm:space-x-4 nav-links text-sm sm:text-base">
+        <li><a href="#" class="hover:underline">Home</a></li>
+        <li><a href="#" class="hover:underline">Destinations</a></li>
+        <li><a href="#" class="hover:underline">Itinerary</a></li>
+        <li><a href="#" class="hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="flex-grow px-4 py-8">
+    <h2 class="text-center text-xl sm:text-2xl font-semibold mb-6">Top Travel Destinations</h2>
+    <div class="grid-auto-fit max-w-6xl mx-auto">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Sunset Beach" class="rounded shadow">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Person Typing on Laptop" class="rounded shadow">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Watch and Travel Book" class="rounded shadow">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Typing Hands" class="rounded shadow">
+      <img src="https://images.unsplash.com/photo-1601758123927-196d5f19a0a5" alt="Dog in Hoodie" class="rounded shadow">
+      <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Mountain Valley River" class="rounded shadow">
+    </div>
+  </main>
+  <footer class="bg-blue-600 text-white text-center py-4">
+    &copy; 2025 Dream Vacation Co.
+  </footer>
+</body>
+
+</html>

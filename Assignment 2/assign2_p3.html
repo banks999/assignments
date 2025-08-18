@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">    
+  <title>Itinerary - Dream Vacation</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @media (max-width: 640px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col justify-between text-gray-800">
+  <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Dream Vacation</h1>
+    <nav>
+      <ul class="flex space-x-4 nav-links">
+        <li><a href="#" class="hover:underline">Home</a></li>
+        <li><a href="#" class="hover:underline">Destinations</a></li>
+        <li><a href="#" class="hover:underline">Itinerary</a></li>
+        <li><a href="#" class="hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="flex-grow px-4 py-8">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6">3-Day Sample Itinerary</h2>
+    <div class="space-y-4 max-w-4xl mx-auto">
+      <div class="bg-white p-4 rounded shadow flex justify-between items-center">
+        <span class="font-semibold">Day 1</span>
+        <span>Arrival and Welcome Dinner</span>
+      </div>
+      <div class="bg-white p-4 rounded shadow flex justify-between items-center">
+        <span class="font-semibold">Day 2</span>
+        <span>Adventure Activities and Local Tour</span>
+      </div>
+      <div class="bg-white p-4 rounded shadow flex justify-between items-center">
+        <span class="font-semibold">Day 3</span>
+        <span>Relaxation &amp; Departure</span>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-blue-600 text-white text-center py-4">
+    &copy; 2025 Dream Vacation Co.
+  </footer>
+</body>
+</html>
